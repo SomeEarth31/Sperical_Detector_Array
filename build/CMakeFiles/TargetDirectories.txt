@@ -1,0 +1,4 @@
+/home/soemearth/My_Things/Geant4/Sphere(NaI)/build/CMakeFiles/rebuild_cache.dir
+/home/soemearth/My_Things/Geant4/Sphere(NaI)/build/CMakeFiles/Simulation.dir
+/home/soemearth/My_Things/Geant4/Sphere(NaI)/build/CMakeFiles/edit_cache.dir
+/home/soemearth/My_Things/Geant4/Sphere(NaI)/build/CMakeFiles/sim.dir

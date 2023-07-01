@@ -1,0 +1,122 @@
+#Basics to view things
+#
+/vis/open OGL
+/vis/viewer/set/viewpointVector 1 1 1
+/vis/drawVolume
+/vis/viewer/set/autoRefresh true 		  #autorefresh
+#/vis/scene/add/trajectories smooth 		  #show trajectories
+#/vis/scene/endOfEventAction accumulate 	  #show all trajectories after run is finished
+#/vis/geometry/set/visibility logicWorld 0 false #Makes world boundry inivisible
+#
+#
+#for gamma rays
+#/gps/particle gamma  		#particle name
+#/gps/pos/type Point		#source type
+#/gps/pos/centre 0. 0. 0. mm	#position of source
+#/gps/ang/type iso		#angle of firing
+#/gps/energy 2297. keV		#energy of particle
+#/gps/number 1			#number of GPSs
+#/control/verbose 2
+#/run/verbose 2
+#/run/beamOn 100000		#Number of times simulation is run
+#
+#for Na-22/Co-60
+#/run/initialize
+#/gps/position 0. 0. 0. mm
+#/gps/energy 0. keV
+#/gps/pos/type Point
+#/gps/ang/type iso
+#/gps/particle ion
+#/gps/ion 11 22 0 0  #sodium
+#/gps/ion 27 60 0 0 #cobalt
+#/control/verbose 2
+#/run/verbose 2
+#/run/beamOn 100000
+#
+#cascading gamma rays for M=10
+/run/initialize
+
+/gps/particle gamma
+/gps/pos/type Point		
+/gps/pos/centre 0. 0. 0. mm	
+/gps/ang/type iso
+/gps/energy 1000. keV	
+
+/gps/source/add 1.      #gamma ray 2
+/gps/particle gamma
+/gps/pos/type Point		
+/gps/pos/centre 0. 0. 0. mm	
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 1000. keV	
+
+/gps/source/add 1.      #gamma ray 3
+/gps/particle gamma
+/gps/pos/type Point		
+/gps/pos/centre 0. 0. 0. mm	
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 1000. keV	
+
+/gps/source/add 1.      #gamma ray 4
+/gps/particle gamma
+/gps/pos/type Point		
+/gps/pos/centre 0. 0. 0. mm	
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 1000. keV	
+
+/gps/source/add 1.      #gamma ray 5
+/gps/particle gamma
+/gps/pos/type Point		
+/gps/pos/centre 0. 0. 0. mm	
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 1000. keV	
+
+/gps/source/add 1.      #gamma ray 6
+/gps/particle gamma
+/gps/pos/type Point		
+/gps/pos/centre 0. 0. 0. mm	
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 1000. keV	
+
+/gps/source/add 1.      #gamma ray 7
+/gps/particle gamma
+/gps/pos/type Point		
+/gps/pos/centre 0. 0. 0. mm	
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 1000. keV	
+
+/gps/source/add 1.      #gamma ray 8
+/gps/particle gamma
+/gps/pos/type Point		
+/gps/pos/centre 0. 0. 0. mm	
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 1000. keV	
+
+/gps/source/add 1.      #gamma ray 9
+/gps/particle gamma
+/gps/pos/type Point		
+/gps/pos/centre 0. 0. 0. mm	
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 1000. keV	
+
+/gps/source/add 1.      #gamma ray 10
+/gps/particle gamma
+/gps/pos/type Point		
+/gps/pos/centre 0. 0. 0. mm	
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 1000. keV	
+
+/gps/source/list        #Starting commands
+/control/verbose 2
+/run/verbose 2
+/gps/source/multiplevertex true
+/run/beamOn 100000
+
