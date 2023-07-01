@@ -16,6 +16,6 @@ You can simulate without having ROOT installed on your machine, but that would r
 
 This repo is to be used with CMAKE, as is the standard. It includes a NaI detector array in the shape of a spherical shell. It is configured to measure the energies of any gamma rays that hit the shot and output them to files titled 'output.root' and 'output.txt.' Using standard root commands, you can then output a histogram from the .root file. The .txt file is used for a more accurate reading. One can also(and usually does) create another script to calculate the total counts for specific energy levels and total rays hit, thus being able to calculate the efficiency of the detector in question. 
 
-I set it up so that all commands to be input in GEANT4 can be done before running the simulation using the in.mac macros. I have used a general particle source and defined a Co-60 ion. Other(commented-out) lines include a definition for a monoenergetic gamma ray. 
+I set it up so that all commands to be input in GEANT4 can be done before running the simulation using the in.mac macros. I have used a general particle source and defined a Co-60 ion. Other(commented-out) lines include a definition for a monoenergetic gamma ray. Once you have cloned the repository, I recommend moving the in. mac file out of the build folder, deleting the build folder, and re-building the project in a new directory(called 'build'). Then you may move the in.mac file back. 
 
 I hope this help! Happy science-ing!
