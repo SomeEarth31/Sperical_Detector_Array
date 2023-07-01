@@ -15,4 +15,4 @@ This repo is to be used with CMAKE, as is the standard. It includes a NaI detect
 
 I set it up so that all commands to be input in GEANT4 can be done before running the simulation using the in.mac macros. I have used a general particle source and have currently defined a Co-60 ion. Other(commented-out) lines include a definition for a monoenergetic gamma ray. 
 
-I hope this help! Happy scienc-ing!
+I hope this help! Happy science-ing!
