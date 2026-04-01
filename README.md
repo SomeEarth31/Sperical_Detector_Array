@@ -1,4 +1,8 @@
 # Sperical_Detector_Array
+
+
+## TO BE UPDATED
+
 Spherical_Detector_Array_GEANT4
 
 This repository contains an example CERN-GEANT4 simulation utilizing the CERN-ROOT toolkit. It is a template for anyone using GEANT4 for scientific purposes.
